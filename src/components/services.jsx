@@ -1,6 +1,6 @@
 // sections/ServicesSection.js
 import React from "react";
-import ServiceCard from "./components/Servicecard";
+import ServiceCard from "./servicecard";
 
 const ServicesSection = () => {
   const services = [

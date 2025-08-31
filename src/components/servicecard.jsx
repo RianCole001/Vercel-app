@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./ServiceCard.module.css"; // optional if using scoped CSS
 
-const ServiceCard = ({ icon, title, description }) => {
+const Servicecard = ({ icon, title, description }) => {
   return (
     <div className="col-md-3 mb-4">
       <div className={`card h-100 text-center bg-secondary text-light shadow-sm ${styles.card || ""}`}>
@@ -18,4 +18,4 @@ const ServiceCard = ({ icon, title, description }) => {
   );
 };
 
-export default ServiceCard;
+export default Servicecard;
