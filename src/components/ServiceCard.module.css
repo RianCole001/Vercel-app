@@ -1,0 +1,20 @@
+/* ServiceCard.module.css */
+.card {
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+}
+
+.card:hover i {
+  color: #ffc107;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.card i {
+  transition: all 0.3s ease-in-out;
+}
