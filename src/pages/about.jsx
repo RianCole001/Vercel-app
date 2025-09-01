@@ -4,7 +4,8 @@ import styles from "./AboutHero.module.css";
 import backgroundImage from "../assets/about.jpeg";
 import CoreValues from "./corevalues";
 import CompanyProfile from "./companyprofile"; 
-
+import BusinessGoals from "./business";
+import BusinessStrategy from "./businessstrategy";
 export default function About() {
   return (
     <>
@@ -34,7 +35,10 @@ export default function About() {
         </div>
       </section>
       <CompanyProfile />
+       <BusinessStrategy />
+      <BusinessGoals />
       <CoreValues />
+     
       <section className="container my-5">
        
       </section>
