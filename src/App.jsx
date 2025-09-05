@@ -93,12 +93,15 @@ function App() {
       </Routes>
  <WhatsAppButton />
        <Footer
-        companyName="BlackBear Constructions"
+        companyName="BlackBear Constructions Ltd"
         description="We are your trusted partner in modern construction, delivering excellence and innovation for every project."
         quickLinks={[
           { label: "Home", path: "/" },
           { label: "About", path: "/about" },
           { label: "Contact", path: "/contact" },
+          { label: "Products", path: "/products" },
+          { label: "Projects", path: "/projects" },
+          { label: "Business Concept", path: "/business-concept" }, 
         ]}
         contactInfo={{
          address: `Black Bear Projects (K) Ltd

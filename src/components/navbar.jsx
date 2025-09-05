@@ -54,11 +54,13 @@ function Navbar() {
                 Our Projects
               </NavLink>
             </li>
+            
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" onClick={handleNavCollapse}>
                 Contact
               </NavLink>
             </li>
+            
           </ul>
         </div>
       </div>

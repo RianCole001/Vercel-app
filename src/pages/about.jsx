@@ -6,6 +6,7 @@ import CoreValues from "./corevalues";
 import CompanyProfile from "./companyprofile"; 
 import BusinessGoals from "./business";
 import BusinessStrategy from "./businessstrategy";
+import Businessconcept from "../../../src/pages/businessconcept";
 export default function About() {
   return (
     <>
@@ -37,7 +38,9 @@ export default function About() {
       <CompanyProfile />
        <BusinessStrategy />
       <BusinessGoals />
-      <CoreValues />
+    
+    <CoreValues />
+
      
       <section className="container my-5">
        
