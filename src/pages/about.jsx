@@ -6,7 +6,6 @@ import CoreValues from "./corevalues";
 import CompanyProfile from "./companyprofile"; 
 import BusinessGoals from "./business";
 import BusinessStrategy from "./businessstrategy";
-import Businessconcept from "../../../src/pages/businessconcept";
 export default function About() {
   return (
     <>
