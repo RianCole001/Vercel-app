@@ -14,7 +14,7 @@ function CarouselSection({ slides }) {
           />
 
           {/* Overlay text */}
-          <Carousel.Caption className="bg-dark bg-opacity-50 rounded p-3">
+          <Carousel.Caption className="bg-dark bg-opacity-50 rounded p-3" style={{ color: "#FFD700" }}  >
             <h3 className="fw-bold">{slide.title}</h3>
             <p>{slide.description}</p>
           </Carousel.Caption>

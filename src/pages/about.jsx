@@ -2,19 +2,28 @@ import React from "react";
 import { ReactTyped } from "react-typed"; // ✅ correct import
 import styles from "./AboutHero.module.css";
 import backgroundImage from "../assets/about.jpeg";
+
+// Sections
 import CoreValues from "./corevalues";
-import CompanyProfile from "./companyprofile"; 
+import CompanyProfile from "./companyprofile";
 import BusinessGoals from "./business";
 import BusinessStrategy from "./businessstrategy";
 import VisionMission from "./vission";
+
 export default function About() {
   return (
-    <>
+    <div style={{ backgroundColor: "black", color: "white" }}>
       {/* Hero Section */}
       <section className={`${styles.hero} text-white position-relative`}>
-        <img src={backgroundImage} alt="About BlackBear" className={styles.bg} />
+        {/* Background image */}
+        <img
+          src={backgroundImage}
+          alt="About BlackBear"
+          className={styles.bg}
+        />
         <div className={styles.overlay} />
 
+        {/* Hero text */}
         <div className="container position-relative py-5 text-center">
           <h1 className="display-4 fw-bold mb-4">About BlackBear</h1>
 
@@ -35,17 +44,16 @@ export default function About() {
           </h2>
         </div>
       </section>
+
+      {/* Body sections */}
       <CompanyProfile />
       <VisionMission />
-       <BusinessStrategy />
+      <BusinessStrategy />
       <BusinessGoals />
-    
-    <CoreValues />
+      <CoreValues />
 
-     
-      <section className="container my-5">
-       
-      </section>
-    </>
+      {/* Spacer section if you want extra space */}
+      <section className="container my-5"></section>
+    </div>
   );
 }

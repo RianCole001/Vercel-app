@@ -1,7 +1,5 @@
 import React from "react";
-import bgImage from "./b2.jpeg"; 
-import bulldozzers from "../assets/bulldozzers.jpeg"; 
-import dark1 from "../assets/dark.jpeg";
+import dark1 from "../assets/DARK1.jpeg";
 
 function CompanyProfile() {
   return (
@@ -13,46 +11,48 @@ function CompanyProfile() {
         backgroundPosition: "center",
       }}
     >
-      {/* Overlay for fading effect */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
-      <div className="relative max-w-5xl mx-auto text-center">
+      <div className="relative max-w-4xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight"style={{ color: '#FFD700' }} >
+        <h2
+          className="text-4xl md:text-5xl font-extrabold mb-6 tracking-wide"
+          style={{ color: "#FFD700" }}
+        >
           Company Profile
         </h2>
 
-        {/* Divider underline */}
-        <div className="w-24 h-1 bg-yellow-500 mx-auto mb-10 rounded-full"></div>
+        {/* Decorative underline */}
+        <div className="w-28 h-1 bg-yellow-500 mx-auto mb-12 rounded-full"></div>
 
         {/* Content */}
-        <p className="text-lg md:text-xl leading-relaxed mb-6"
-        
-        
-        >
-          Our company is headquartered in{" "}
-          <span className="font-semibold text-yellow-400">
-            Kerugoya Town, Kirinyaga County
-          </span>
-          , with strong interests and presence in all major towns across Kenya.
-        </p>
+        <div className="space-y-8 text-lg md:text-xl font-semibold leading-relaxed tracking-wide">
+          <p>
+            Our company is headquartered in{" "}
+            <span className="font-bold text-yellow-400">
+              Kerugoya Town, Kirinyaga County
+            </span>
+            , with strong interests and presence in all major towns across Kenya.
+          </p>
 
-        <p className="text-lg md:text-xl leading-relaxed mb-6">
-          We adopt a{" "}
-          <span className="font-semibold text-yellow-400">
-            Total Construction Project Management
-          </span>{" "}
-          approach in all our operations, ensuring unmatched value additions
-          that are consistently passed on to our clients.
-        </p>
+          <p>
+            We adopt a{" "}
+            <span className="font-bold text-yellow-400">
+              Total Construction Project Management
+            </span>{" "}
+            approach in all our operations, ensuring unmatched value additions
+            consistently passed on to our clients.
+          </p>
 
-        <p className="text-lg md:text-xl leading-relaxed">
-          At the heart of our business are our{" "}
-          <span className="font-semibold text-yellow-400">Clients</span> and{" "}
-          <span className="font-semibold text-yellow-400">Staff</span>. They are
-          our most important assets, and we deliberately put their interests
-          above everything else.
-        </p>
+          <p>
+            At the heart of our business are our{" "}
+            <span className="font-bold text-yellow-400">Clients</span> and{" "}
+            <span className="font-bold text-yellow-400">Staff</span>. They are
+            our most important assets, and we deliberately put their interests
+            above everything else.
+          </p>
+        </div>
       </div>
     </section>
   );
