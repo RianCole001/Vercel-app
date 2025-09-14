@@ -26,6 +26,7 @@ import Contact from "./pages/contact";
 import NotFound from "./pages/Notfound";
 import TendersTable from "./pages/Tenders";
 import Products from "./pages/products"; 
+import Projects from "./pages/projects";  
      
 
 function App() {
@@ -92,8 +93,10 @@ function App() {
         {/* TendersTable Route - ADDED */}
         <Route path="/Tenders" element={<TendersTable />} />
          <Route path="/products" element={<Products />} />
+          <Route path="/projects" element={<Projects />} /> 
         {/* Catch-all for invalid URLs */}
         <Route path="*" element={<NotFound />} />
+
       </Routes>
       <WhatsAppButton />
        <Footer
@@ -105,7 +108,7 @@ function App() {
           { label: "Contact", path: "/contact" },
           { label: "Products", path: "/products" },
           { label: "Projects", path: "/projects" },
-          { label: "TendersTable", path: "/Tenders" }, 
+          { label: "Tenders", path: "/Tenders" }, 
         ]}
         contactInfo={{
          address: `Black Bear Projects (K) Ltd

@@ -1,19 +1,21 @@
 import React from "react";
 import { Container, Carousel, Row, Col, Card } from "react-bootstrap";
 
-import project1a from "../assets/project1a.jpeg";
-import project1b from "../assets/project1b.jpeg";
-import project2a from "../assets/project2a.jpeg";
-import project2b from "../assets/project2b.jpeg";
-import project3a from "../assets/project3a.jpeg";
-import project3b from "../assets/project3b.jpeg";
+import project1a from "../assets/streetlight.jpg";
+import project1b from "../assets/res.jpg";
+import project2a from "../assets/Road1.jpg";
+import project2b from "../assets/residencypp.webp";
+import project3a from "../assets/officespace.webp";
+import project3b from "../assets/officeb.webp";
+import bb from "../assets/bulldozzers.jpeg";   
 
-function Projects() {
+
+function Projects() { 
   const projectList = [
     {
-      title: "Shopping Mall Development",
+      title: "Road Lighting & Commercial Hub",
       description:
-        "A state-of-the-art commercial hub featuring retail outlets, entertainment zones, and modern office spaces.",
+        "Light grading of Kiawaruguru-Kamuiru access roads in Kirinyaga county .",
       images: [project1a, project1b],
     },
     {
@@ -37,13 +39,13 @@ function Projects() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={project1a}
+            src={bb}
             alt="First project"
             style={{ height: "500px", objectFit: "cover" }}
           />
           <Carousel.Caption>
-            <h2 className="fw-bold">Delivering Iconic Projects</h2>
-            <p>From commercial landmarks to modern homes & infrastructure.</p>
+            <h2 className="fw-bold"  style={{ color: "#FFD700" }} >Delivering Iconic Projects</h2>
+            <p style={{ color: "green"  }}  >From commercial landmarks to modern homes & infrastructure.</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -76,7 +78,7 @@ function Projects() {
 
       {/* ✅ Projects Grid */}
       <Container className="py-5">
-        <h2 className="text-center fw-bold mb-5">Our Featured Projects</h2>
+        <h2 className="text-center fw-bold mb-5" style={{ color: "#FFD700" }}  >Our Featured Projects</h2>
         {projectList.map((project, index) => (
           <Row
             key={index}

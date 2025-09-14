@@ -41,7 +41,7 @@ export default function Products() {
   ];
 
   return (
-    <div className="bg-dark text-light py-5">
+    <div className="bg-dark text-light py-5 mt-5"> {/* 👈 Added mt-5 to push below navbar */}
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-5">
@@ -80,7 +80,7 @@ export default function Products() {
                     href="/contact"
                     className="btn btn-primary mt-3 align-self-start"
                   >
-                    Get a Qoute→
+                    Get a Quote →
                   </a>
                 </div>
               </div>
