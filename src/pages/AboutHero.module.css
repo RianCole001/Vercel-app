@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #111; /* fallback */
+  background-color: #eeecec; /* fallback */
 }
 
 .bg {

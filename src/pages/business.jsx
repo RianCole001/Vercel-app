@@ -27,7 +27,7 @@ function BusinessGoals() {
   return (
     <section className="py-5 bg-dark text-light text-center">
       <Container>
-        <h2 className="mb-5 fw-bold">Business Goals and Objectives</h2>
+        <h2 className="mb-5 fw-bold text-white">Business Goals and Objectives</h2>
         <Row>
           {goals.map((goal, index) => (
             <Col key={index} md={4} className="mb-4">

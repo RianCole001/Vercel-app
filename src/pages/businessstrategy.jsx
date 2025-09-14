@@ -25,33 +25,44 @@ function BusinessStrategy() {
   ];
 
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5 bg-dark text-light">
       <Container>
-        <h2 className="text-center fw-bold mb-5">Business Strategy</h2>
-        <div className="timeline position-relative mx-auto" style={{ maxWidth: "700px" }}>
+        <h2 className="text-center fw-bold mb-5 text-white">
+          Business Strategy
+        </h2>
+        <div
+          className="timeline position-relative mx-auto"
+          style={{ maxWidth: "700px" }}
+        >
           {strategies.map((strategy, index) => (
-            <div key={index} className="timeline-item mb-5 d-flex align-items-start">
+            <div
+              key={index}
+              className="timeline-item mb-5 d-flex align-items-start"
+            >
               {/* Icon Circle */}
-              <div className="timeline-icon d-flex justify-content-center align-items-center bg-dark text-white rounded-circle me-3"
-                   style={{ width: "60px", height: "60px", flexShrink: 0 }}>
+              <div
+                className="timeline-icon d-flex justify-content-center align-items-center bg-secondary text-warning rounded-circle me-3 shadow"
+                style={{ width: "60px", height: "60px", flexShrink: 0 }}
+              >
                 {strategy.icon}
               </div>
               {/* Text Content */}
               <div>
-                <h5 className="fw-bold">{strategy.title}</h5>
-                <p className="mb-0">{strategy.description}</p>
+                <h5 className="fw-bold text-white">{strategy.title}</h5>
+                <p className="mb-0 text-light">{strategy.description}</p>
               </div>
             </div>
           ))}
           {/* Vertical Line */}
-          <div className="timeline-line position-absolute top-0 bottom-0 start-0"
-               style={{
-                 left: "30px",
-                 width: "2px",
-                 backgroundColor: "#ccc",
-                 marginLeft: "28px",
-                 zIndex: -1,
-               }}
+          <div
+            className="timeline-line position-absolute top-0 bottom-0 start-0"
+            style={{
+              left: "30px",
+              width: "2px",
+              backgroundColor: "rgba(255,255,255,0.2)", // subtle line
+              marginLeft: "28px",
+              zIndex: -1,
+            }}
           ></div>
         </div>
       </Container>
@@ -60,4 +71,3 @@ function BusinessStrategy() {
 }
 
 export default BusinessStrategy;
-

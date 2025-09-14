@@ -1,12 +1,14 @@
 import React from "react";
 import bgImage from "./b2.jpeg"; 
+import bulldozzers from "../assets/bulldozzers.jpeg"; 
+import dark1 from "../assets/DARK1.jpeg";
 
 function CompanyProfile() {
   return (
     <section
       className="relative py-20 px-6 md:px-20 bg-gray-900 text-white"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${dark1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

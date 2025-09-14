@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHandsHelping, FaLightbulb, FaStar, FaLeaf, FaUsers } from "react-icons/fa";
 import "./CoreValues.css";
-import bulldozerImg from "./bulldozzers.jpeg";
+import bulldozerImg from "../assets/bulldozzers.jpeg";
 
 
 function CoreValues() {

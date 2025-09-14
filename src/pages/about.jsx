@@ -6,6 +6,7 @@ import CoreValues from "./corevalues";
 import CompanyProfile from "./companyprofile"; 
 import BusinessGoals from "./business";
 import BusinessStrategy from "./businessstrategy";
+import VisionMission from "./vission";
 export default function About() {
   return (
     <>
@@ -17,7 +18,7 @@ export default function About() {
         <div className="container position-relative py-5 text-center">
           <h1 className="display-4 fw-bold mb-4">About BlackBear</h1>
 
-          <h2 className="lead fs-2 fw-semibold">
+          <h2 className="lead fs-2 fw-semibold text-white">
             <ReactTyped
               strings={[
                 "Established in Kenya since 2012 🇰🇪",
@@ -26,15 +27,16 @@ export default function About() {
                 "Delivering excellence in construction & projects 🏗️",
                 "Built on reliability, vision, and value 🌍",
               ]}
-              typeSpeed={60}
+              typeSpeed={90}
               backSpeed={40}
-              backDelay={2000}
+              backDelay={3000}
               loop
             />
           </h2>
         </div>
       </section>
       <CompanyProfile />
+      <VisionMission />
        <BusinessStrategy />
       <BusinessGoals />
     

@@ -18,7 +18,7 @@ function Navbar() {
             height="40"
             className="d-inline-block align-text-top me-2"
           />
-          BlackBear
+          BlackBear Constructions
         </Link>
 
         <button
@@ -45,8 +45,8 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Our Products" onClick={handleNavCollapse}>
-                Our Products
+              <NavLink className="nav-link" to="/Products" onClick={handleNavCollapse}>
+                Products
               </NavLink>
             </li>
             <li className="nav-item">
@@ -54,7 +54,13 @@ function Navbar() {
                 Our Projects
               </NavLink>
             </li>
-            
+               <li className="nav-item">
+              <NavLink className="nav-link" to="/Tenders" onClick={handleNavCollapse}>
+                Tenders
+              </NavLink>
+            </li>
+
+
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" onClick={handleNavCollapse}>
                 Contact
