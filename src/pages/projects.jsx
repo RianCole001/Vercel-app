@@ -1,35 +1,46 @@
 import React from "react";
 import { Container, Carousel, Row, Col, Card } from "react-bootstrap";
+import { CheckCircle } from "lucide-react";
 
+// Images
 import project1a from "../assets/streetlight.jpg";
 import project1b from "../assets/res.jpg";
 import project2a from "../assets/Road1.jpg";
 import project2b from "../assets/residencypp.webp";
 import project3a from "../assets/officespace.webp";
 import project3b from "../assets/officeb.webp";
-import bb from "../assets/bulldozzers.jpeg";   
+import bb from "../assets/bulldozzers.jpeg";
+import sh from "../assets/sh.jpeg";
+import blackbear from "../assets/blackbear.jpg";
 
-
-function Projects() { 
+function Projects() {
   const projectList = [
     {
       title: "Road Lighting & Commercial Hub",
       description:
-        "Light grading of Kiawaruguru-Kamuiru access roads in Kirinyaga county .",
-      images: [project1a, project1b],
+        "Light grading of Kiawaruguru-Kamuiru access roads in Kirinyaga county.",
+      images: [project1a, sh],
     },
     {
       title: "Residential Apartments",
       description:
-        "Luxury apartments designed for comfort, sustainability, and modern living standards.",
-      images: [project2a, project2b],
+        "Construction of director’s residence, Kerugoya – a 6-bedroom house with carports, servant quarters, borehole, landscaping & fencing.",
+      images: [project1b, project2b],
     },
     {
-      title: "Highway & Civil Works",
+      title: "Institutional Buildings",
       description:
-        "Infrastructure projects including highways, bridges, and drainage systems — enhancing connectivity.",
-      images: [project3a, project3b],
+        "Construction of Black Bear Projects (K) Ltd office block & yard with septic system, vehicle yard, fencing & gate.",
+      images: [blackbear, bb],
     },
+  ];
+
+  const otherProjects = [
+    "Top sub grading, bridge back filling for Mr. Mbogori.",
+    "Shoulder light grading and carriageway for Mukinduri-Kianjege-Kiaga.",
+    "Shoulder light grading and carriageway for Njegas-Baricho Road.",
+    "Creating Dykes at Mwea. 8. Plot back filling for Mr. Maruti..",
+    
   ];
 
   return (
@@ -39,25 +50,29 @@ function Projects() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={bb}
+            src={project2b}
             alt="First project"
             style={{ height: "500px", objectFit: "cover" }}
           />
           <Carousel.Caption>
-            <h2 className="fw-bold"  style={{ color: "#FFD700" }} >Delivering Iconic Projects</h2>
-            <p style={{ color: "green"  }}  >From commercial landmarks to modern homes & infrastructure.</p>
+            <h2 className="fw-bold" style={{ color: "#FFD700" }}>
+              Delivering Iconic Projects
+            </h2>
+            <p>From commercial landmarks to modern homes & infrastructure.</p>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={project2a}
+            src={project3b}
             alt="Second project"
             style={{ height: "500px", objectFit: "cover" }}
           />
           <Carousel.Caption>
-            <h2 className="fw-bold">Shaping Skylines</h2>
+            <h2 className="fw-bold" style={{ color: "#FFD700" }}>
+              Shaping Skylines
+            </h2>
             <p>Building dreams with integrity and innovation.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -70,15 +85,19 @@ function Projects() {
             style={{ height: "500px", objectFit: "cover" }}
           />
           <Carousel.Caption>
-            <h2 className="fw-bold">Engineering Excellence</h2>
+            <h2 className="fw-bold" style={{ color: "#FFD700" }}>
+              Engineering Excellence
+            </h2>
             <p>Quality infrastructure for sustainable growth.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
 
-      {/* ✅ Projects Grid */}
+      {/* ✅ Featured Projects */}
       <Container className="py-5">
-        <h2 className="text-center fw-bold mb-5" style={{ color: "#FFD700" }}  >Our Featured Projects</h2>
+        <h2 className="text-center fw-bold mb-5" style={{ color: "#FFD700" }}>
+          Our Featured Projects
+        </h2>
         {projectList.map((project, index) => (
           <Row
             key={index}
@@ -107,6 +126,31 @@ function Projects() {
             </Col>
           </Row>
         ))}
+      </Container>
+
+      {/* ✅ Other Projects Section */}
+      <Container className="py-5 border-top">
+        <h2 className="text-center fw-bold mb-4" style={{ color: "#FFD700" }}>
+          Other Notable Projects
+        </h2>
+        <Row className="justify-content-center">
+          <Col md={8}>
+            <ul className="list-unstyled fs-5">
+              {otherProjects.map((item, index) => (
+                <li
+                  key={index}
+                  className="d-flex align-items-start mb-3 border-bottom pb-2"
+                >
+                  <CheckCircle
+                    className="me-3 text-success"
+                    size={22}
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
