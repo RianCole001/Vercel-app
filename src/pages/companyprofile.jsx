@@ -1,7 +1,7 @@
 import React from "react";
 import bgImage from "./b2.jpeg"; 
 import bulldozzers from "../assets/bulldozzers.jpeg"; 
-import dark1 from "../assets/DARK1.jpeg";
+import dark1 from "../assets/dark.jpeg";
 
 function CompanyProfile() {
   return (
