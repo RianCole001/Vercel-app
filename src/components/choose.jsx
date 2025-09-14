@@ -17,7 +17,7 @@ function Chooseus() {
         <div className="card shadow-sm h-100">
           <div className="card-body">
             <h5 className="card-title">Affordability</h5>
-            <p className="card-text">We offer remium services at fair pricing.</p>
+            <p className="card-text">We offer premium services at fair pricing.</p>
           </div>
         </div>
       </div>
