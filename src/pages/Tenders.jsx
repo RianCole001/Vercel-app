@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Spinner } from 'react-bootstrap'; // ✅ Import Bootstrap Spinner
 import './Tenderstable.css';
 
 const TendersTable = () => {
@@ -44,7 +45,16 @@ const TendersTable = () => {
     fetchAllTenders();
   }, []);
 
-  if (loading) return <div className="status-message">Loading tenders... ⏳</div>;
+  // ✅ Spinner while loading
+  if (loading) {
+    return (
+      <div className="d-flex justify-content-center align-items-center" style={{ height: "300px" }}>
+        <Spinner animation="border" role="status" variant="primary" />
+        <span className="ms-3 fs-5 text-primary">Fetching tenders...</span>
+      </div>
+    );
+  }
+
   if (error) return <div className="status-message error-message">Error: {error.message} 😞</div>;
   if (!Array.isArray(tenders) || tenders.length === 0)
     return <div className="status-message">No active tenders found. 🤷‍♂️</div>;

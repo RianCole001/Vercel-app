@@ -4,9 +4,9 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinked
 
 function Contact() {
   const contactInfo = [
-    { icon: <FaPhoneAlt />, title: "Phone", value: "+254 712 345 678" },
+    { icon: <FaPhoneAlt />, title: "Phone", value: "+254 726782071 " },
     { icon: <FaEnvelope />, title: "Email", value: "info@blackbear.co.ke" },
-    { icon: <FaMapMarkerAlt />, title: "Address", value: "Nairobi, Kenya" },
+    { icon: <FaMapMarkerAlt />, title: "Address", value: " P.O Box 1177-10300Kerugoya " },
   ];
 
   return (
